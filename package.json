@@ -1,0 +1,22 @@
+{
+  "name": "langchain-in-browser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "webpack build --mode production",
+    "start": "webpack build && cd dist && python -m http.server 8000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@langchain/community": "^0.2.0",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^5.0.4"
+  }
+}
